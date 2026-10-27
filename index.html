@@ -76,6 +76,29 @@
       max-width: 850px;
       margin: 24px 0;
     }
+    
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  align-items: center;
+  gap: 60px;
+}
+.hero-image {
+  width: 100%;
+  max-height: 580px;
+  object-fit: contain;
+  display: block;
+}
+@media (max-width: 750px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .hero-image {
+    max-height: 420px;
+  }
+}
+
     .hero p {
       font-size: clamp(17px, 2vw, 21px);
       max-width: 760px;
@@ -164,8 +187,10 @@
 </header>
 
 <main>
-  <div class="hero">
-    <div class="container">
+
+<div class="hero">
+  <div class="container hero-layout">
+    <div>
       <div class="eyebrow">Stony Brook University</div>
       <h1>Neural circuits.<br>Behavior. Disease.</h1>
       <p>
@@ -173,9 +198,18 @@
         behavior and how their dysfunction contributes
         to neurological and psychiatric disorders.
       </p>
-      <a class="button" href="#research">Explore Our Research</a>
+      <a class="button" href="#research">
+        Explore Our Research
+      </a>
     </div>
+    <img
+      class="hero-image"
+      src="plotkin-neuron.webp"
+      alt="Red fluorescent striatal projection neuron"
+    >
   </div>
+</div>
+
 
   <section class="light" id="research">
     <div class="container">
