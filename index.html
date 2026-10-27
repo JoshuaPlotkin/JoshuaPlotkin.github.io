@@ -85,13 +85,12 @@
 }
 .hero-image {
   width: 100%;
-  height: 540px;
-  object-fit: cover;
-  object-position: center;
+  max-height: 540px;
+  object-fit: contain;
   display: block;
   border: none;
   box-shadow: none;
-  clip-path: inset(0 0 0 12px);
+  clip-path: inset(0 0 0 20px);
 }
 @media (max-width: 750px) {
   .hero-layout {
