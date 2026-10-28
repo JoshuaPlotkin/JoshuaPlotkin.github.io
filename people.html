@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>People | Plotkin Lab</title>
+  <style>
+    :root {
+      --navy: #142536;
+      --teal: #497e88;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--navy);
+      background: #f5f7f9;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--navy);
+      color: white;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 20px 0;
+    }
+
+    .brand {
+      color: white;
+      font-size: 23px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    main { padding: 75px 0 110px; }
+
+    h1 {
+      font-size: 44px;
+      margin: 0 0 8px;
+    }
+
+    .subtitle {
+      color: #607080;
+      margin: 0 0 36px;
+    }
+
+    .panel {
+      background: white;
+      border: 1px solid #e0e6ea;
+      border-radius: 10px;
+      padding: 36px;
+      margin-bottom: 26px;
+    }
+
+    .section-label {
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .member {
+      padding: 17px 0;
+      border-bottom: 1px solid #e0e6ea;
+    }
+
+    .member:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .member h2 {
+      font-size: 21px;
+      margin: 0;
+    }
+
+    .member p {
+      color: #607080;
+      margin: 3px 0 0;
+    }
+
+    @media (max-width: 750px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      h1 { font-size: 36px; }
+      .panel { padding: 24px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">PLOTKIN LAB</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html#research">Research</a>
+        <a href="people.html">People</a>
+        <a href="index.html#publication">Publications</a>
+        <a href="index.html#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>People</h1>
+      <p class="subtitle">Meet the Plotkin Lab</p>
+
+      <section class="panel">
+        <div class="section-label">Principal Investigator</div>
+        <div class="member">
+          <h2>Joshua Plotkin, PhD</h2>
+          <p>Principal Investigator</p>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-label">Lab Members</div>
+
+        <div class="member">
+          <h2>Zachary Hobel, PhD</h2>
+          <p>Postdoctoral Fellow</p>
+        </div>
+
+        <div class="member">
+          <h2>Taryn Brechbill</h2>
+          <p>PhD Student</p>
+        </div>
+
+        <div class="member">
+          <h2>Sasha Kirsch</h2>
+          <p>Master's Student</p>
+        </div>
+
+        <div class="member">
+          <h2>Rachel Okey</h2>
+          <p>Master's Student</p>
+        </div>
+
+        <div class="member">
+          <h2>Seth Lewis</h2>
+          <p>Master's Student</p>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
