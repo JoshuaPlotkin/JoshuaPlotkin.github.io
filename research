@@ -139,7 +139,6 @@
       </p>
 
       <section class="research-section" id="ocd">
-        <div class="research-number">01 / RESEARCH AREA</div>
         <h2>OCD and Compulsive Behaviors</h2>
         <p>
           Investigating how alterations in striatal circuit
@@ -149,7 +148,6 @@
       </section>
 
       <section class="research-section" id="compartments">
-        <div class="research-number">02 / RESEARCH AREA</div>
         <h2>Compartmental Function of the Striatum</h2>
         <p>
           Understanding how striosome and matrix compartments
@@ -159,7 +157,6 @@
       </section>
 
       <section class="research-section" id="neuromodulation">
-        <div class="research-number">03 / RESEARCH AREA</div>
         <h2>Neuromodulation</h2>
         <p>
           Studying how neuromodulators regulate striatal
@@ -168,7 +165,6 @@
       </section>
 
       <section class="research-section" id="parkinsons">
-        <div class="research-number">04 / RESEARCH AREA</div>
         <h2>Parkinson's Disease</h2>
         <p>
           Examining how dopamine depletion and replacement
