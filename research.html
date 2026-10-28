@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Plotkin Lab</title>
+
+  <style>
+    :root {
+      --navy: #142536;
+      --teal: #497e88;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7f9;
+      color: var(--navy);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--navy);
+      color: white;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      padding: 20px 0;
+    }
+
+    .brand {
+      color: white;
+      font-size: 23px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    main {
+      padding: 75px 0 110px;
+    }
+
+    h1 {
+      font-size: 44px;
+      margin: 0 0 8px;
+    }
+
+    .subtitle {
+      color: #607080;
+      margin: 0 0 42px;
+    }
+
+    .research-section {
+      background: white;
+      border: 1px solid #e0e6ea;
+      border-radius: 10px;
+      padding: 42px;
+      margin-bottom: 28px;
+    }
+
+    .research-number {
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+    }
+
+    .research-section h2 {
+      font-size: 27px;
+      line-height: 1.3;
+      margin: 12px 0 18px;
+    }
+
+    .research-section p {
+      max-width: 780px;
+      color: #526477;
+      margin: 0;
+      font-size: 17px;
+    }
+
+    @media (max-width: 750px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      h1 { font-size: 36px; }
+
+      .research-section {
+        padding: 26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">PLOTKIN LAB</a>
+      <nav aria-label="Main navigation">
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="index.html#publication">Publications</a>
+        <a href="index.html#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Research</h1>
+      <p class="subtitle">
+        Exploring basal ganglia circuits in health and disease
+      </p>
+
+      <section class="research-section" id="ocd">
+        <div class="research-number">01 / RESEARCH AREA</div>
+        <h2>OCD and Compulsive Behaviors</h2>
+        <p>
+          Investigating how alterations in striatal circuit
+          function and neuromodulation contribute to
+          compulsive behaviors.
+        </p>
+      </section>
+
+      <section class="research-section" id="compartments">
+        <div class="research-number">02 / RESEARCH AREA</div>
+        <h2>Compartmental Function of the Striatum</h2>
+        <p>
+          Understanding how striosome and matrix compartments
+          are differentially engaged and regulated to shape
+          behavior.
+        </p>
+      </section>
+
+      <section class="research-section" id="neuromodulation">
+        <div class="research-number">03 / RESEARCH AREA</div>
+        <h2>Neuromodulation</h2>
+        <p>
+          Studying how neuromodulators regulate striatal
+          circuit function in health and disease.
+        </p>
+      </section>
+
+      <section class="research-section" id="parkinsons">
+        <div class="research-number">04 / RESEARCH AREA</div>
+        <h2>Parkinson's Disease</h2>
+        <p>
+          Examining how dopamine depletion and replacement
+          alter striatal compartmental function and contribute
+          to motor and non-motor symptoms.
+        </p>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
