@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Research at the Plotkin Lab: basal ganglia circuits, compulsive behavior, striatal compartments, neuromodulation, and Parkinson's disease.">
-  <title>Research | Plotkin Lab</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Research at the Plotkin Lab: basal ganglia circuits, compulsive behavior, striatal compartments, neuromodulation, and Parkinson's disease." name="description"/>
+<title>Research | Plotkin Lab</title>
+<style>
     :root { --navy:#142536; --teal:#497e88; --paper:#f5f7f9; --ink:#263b4b; --muted:#526477; }
     * { box-sizing:border-box; }
     html { scroll-behavior:smooth; }
@@ -33,58 +34,65 @@
     footer a { color:#d6e0e8; text-decoration:none; }
     footer a:hover { color:white; text-decoration:underline; }
     @media(max-width:650px) { main { padding:54px 0 70px; } .overview { font-size:17px; margin-bottom:36px; } .research-section { padding:27px 25px; } .research-section p { font-size:16px; } nav { gap:14px; } }
-  </style>
+  
+    .research-content { display:grid; grid-template-columns:minmax(0,1fr) minmax(250px,0.75fr); gap:36px; align-items:center; }
+    .research-section:nth-of-type(even) .research-figure { order:-1; }
+    .research-figure { margin:0; min-width:0; }
+    .research-figure img { width:100%; height:auto; display:block; border-radius:6px; }
+    .research-copy { min-width:0; }
+    @media (max-width:800px) {
+      .research-content { grid-template-columns:1fr; gap:24px; }
+      .research-section:nth-of-type(even) .research-figure { order:0; }
+      .research-figure img { max-height:420px; object-fit:contain; }
+    }
+</style>
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <a class="brand" href="index.html">PLOTKIN LAB</a>
-      <nav aria-label="Main navigation">
-        <a href="research.html" aria-current="page">Research</a>
-        <a href="people.html">People</a>
-        <a href="publications.html">Publications</a>
-        <a href="index.html#about">About</a>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <div class="container">
-      <h1>Research</h1>
-      <p class="overview">Our laboratory investigates how basal ganglia circuits are functionally organized, how they regulate behavior, and how their dysfunction contributes to neurological and psychiatric disorders. We combine electrophysiology, advanced imaging, circuit manipulation, and behavioral approaches to uncover the neural mechanisms underlying these processes.</p>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html">PLOTKIN LAB</a>
+<nav aria-label="Main navigation">
+<a aria-current="page" href="research.html">Research</a>
+<a href="people.html">People</a>
+<a href="publications.html">Publications</a>
+<a href="index.html#about">About</a>
+</nav>
+</div>
+</header>
+<main>
+<div class="container">
+<h1>Research</h1>
+<p class="overview">Our laboratory investigates how basal ganglia circuits are functionally organized, how they regulate behavior, and how their dysfunction contributes to neurological and psychiatric disorders. We combine electrophysiology, advanced imaging, circuit manipulation, and behavioral approaches to uncover the neural mechanisms underlying these processes.</p>
+<section class="research-section" id="ocd">
+<h2>OCD and Compulsive Behaviors</h2>
 
-      <section class="research-section" id="ocd">
-        <h2>OCD and Compulsive Behaviors</h2>
-        <p>At any given moment, the brain faces the formidable task of selecting among numerous possible actions. Some actions are beneficial and should be initiated, while others are inappropriate and must be suppressed. The inability to properly regulate this process lies at the heart of many neurological and psychiatric disorders, perhaps most notably obsessive-compulsive disorder (OCD).</p>
-        <p>The striatum plays a central role in this process of “action selection.” Accordingly, dysregulated striatal function has been linked to compulsive behaviors, a defining feature of OCD. Yet precisely how striatal dysfunction gives rise to these behaviors remains poorly understood.</p>
-        <p>Using mouse models of OCD-like behavior, we investigate how striatal dysfunction contributes to compulsive and repetitive behaviors. Our work has identified two potentially targetable circuit abnormalities that are central to this process: pathological cholinergic signaling and abnormal modulation of sensorimotor corticostriatal synapses by limbic inputs.</p>
-      </section>
 
-      <section class="research-section" id="compartments">
-        <h2>Compartmental Function of the Striatum</h2>
-        <p>The striatum is organized into two neurochemically and anatomically distinct compartments known as striosomes and matrix. Although these compartments are intermingled throughout the striatum, they differ in their connectivity, neuromodulatory regulation, and contributions to behavior.</p>
-        <p>Our laboratory investigates how striosome and matrix circuits process information and respond to neuromodulatory signals. We are particularly interested in how dopamine differentially regulates neuronal excitability and synaptic transmission within these compartments, and how their distinct properties contribute to basal ganglia function. Understanding these differences may reveal how compartment-specific circuit dysfunction contributes to neurological and psychiatric disorders.</p>
-      </section>
 
-      <section class="research-section" id="neuromodulation">
-        <h2>Neuromodulation</h2>
-        <p>Striatal function is strongly influenced by neuromodulators, including dopamine, acetylcholine, and serotonin, which regulate neuronal excitability, synaptic transmission, and plasticity. Our research examines how these signaling systems interact to shape information processing within the striatum.</p>
-        <p>A particular focus is on striatal cholinergic interneurons, a relatively sparse population of neurons that exerts widespread influence over the striatum. We investigate how these neurons shape striatal circuit function, both through their direct effects on neuronal activity and by coordinating the release of other neuromodulators.</p>
-      </section>
+<div class="research-content"><div class="research-copy"><p>At any given moment, the brain faces the formidable task of selecting among numerous possible actions. Some actions are beneficial and should be initiated, while others are inappropriate and must be suppressed. The inability to properly regulate this process lies at the heart of many neurological and psychiatric disorders, perhaps most notably obsessive-compulsive disorder (OCD).</p><p>The striatum plays a central role in this process of “action selection.” Accordingly, dysregulated striatal function has been linked to compulsive behaviors, a defining feature of OCD. Yet precisely how striatal dysfunction gives rise to these behaviors remains poorly understood.</p><p>Using mouse models of OCD-like behavior, we investigate how striatal dysfunction contributes to compulsive and repetitive behaviors. Our work has identified two potentially targetable circuit abnormalities that are central to this process: pathological cholinergic signaling and abnormal modulation of sensorimotor corticostriatal synapses by limbic inputs.</p></div><figure class="research-figure"><img alt="Fluorescent tracing of dorsolateral and dorsomedial striatal regions and basolateral amygdala" decoding="async" loading="lazy" src="research-bla-tracing.webp"/></figure></div></section>
+<section class="research-section" id="compartments">
+<h2>Compartmental Function of the Striatum</h2>
 
-      <section class="research-section" id="parkinsons">
-        <h2>Parkinson's Disease</h2>
-        <p>Parkinson's disease is characterized by the degeneration of dopamine-producing neurons in the substantia nigra and the resulting dysfunction of basal ganglia circuits. Although its motor symptoms are well recognized, Parkinson's disease also produces cognitive and other non-motor impairments that can significantly affect quality of life.</p>
-        <p>Our research examines how dopamine depletion and replacement alter striatal circuit function, with particular emphasis on differences between striosome and matrix compartments. By identifying compartment-specific mechanisms of dysfunction, we aim to better understand how altered striatal activity contributes to the motor and non-motor symptoms of Parkinson's disease.</p>
-      </section>
-    </div>
-  </main>
-  <footer>
-    <div class="container">
-      <strong>Plotkin Lab</strong><br>
-      Stony Brook University<br>
-      Stony Brook, New York<br>
-      <a href="mailto:joshua.plotkin@stonybrook.edu">joshua.plotkin@stonybrook.edu</a>
-    </div>
-  </footer>
+
+<div class="research-content"><div class="research-copy"><p>The striatum is organized into two neurochemically and anatomically distinct compartments known as striosomes and matrix. Although these compartments are intermingled throughout the striatum, they differ in their connectivity, neuromodulatory regulation, and contributions to behavior.</p><p>Our laboratory investigates how striosome and matrix circuits process information and respond to neuromodulatory signals. We are particularly interested in how dopamine differentially regulates neuronal excitability and synaptic transmission within these compartments, and how their distinct properties contribute to basal ganglia function. Understanding these differences may reveal how compartment-specific circuit dysfunction contributes to neurological and psychiatric disorders.</p></div><figure class="research-figure"><img alt="Fluorescence microscopy figure showing striosome and matrix compartments" decoding="async" loading="lazy" src="research-striosome-matrix.webp"/></figure></div></section>
+<section class="research-section" id="neuromodulation">
+<h2>Neuromodulation</h2>
+
+
+<div class="research-content"><div class="research-copy"><p>Striatal function is strongly influenced by neuromodulators, including dopamine, acetylcholine, and serotonin, which regulate neuronal excitability, synaptic transmission, and plasticity. Our research examines how these signaling systems interact to shape information processing within the striatum.</p><p>A particular focus is on striatal cholinergic interneurons, a relatively sparse population of neurons that exerts widespread influence over the striatum. We investigate how these neurons shape striatal circuit function, both through their direct effects on neuronal activity and by coordinating the release of other neuromodulators.</p></div><figure class="research-figure"><img alt="Schematic of nigrostriatal dopamine circuitry and experimental recording and stimulation" decoding="async" loading="lazy" src="research-nigrostriatal.webp"/></figure></div></section>
+<section class="research-section" id="parkinsons">
+<h2>Parkinson's Disease</h2>
+
+
+<div class="research-content"><div class="research-copy"><p>Parkinson's disease is characterized by the degeneration of dopamine-producing neurons in the substantia nigra and the resulting dysfunction of basal ganglia circuits. Although its motor symptoms are well recognized, Parkinson's disease also produces cognitive and other non-motor impairments that can significantly affect quality of life.</p><p>Our research examines how dopamine depletion and replacement alter striatal circuit function, with particular emphasis on differences between striosome and matrix compartments. By identifying compartment-specific mechanisms of dysfunction, we aim to better understand how altered striatal activity contributes to the motor and non-motor symptoms of Parkinson's disease.</p></div><figure class="research-figure"><img alt="Two-channel fluorescence microscopy images of neuronal processes and surrounding signals" decoding="async" loading="lazy" src="research-spines.webp"/></figure></div></section>
+</div>
+</main>
+<footer>
+<div class="container">
+<strong>Plotkin Lab</strong><br/>
+      Stony Brook University<br/>
+      Stony Brook, New York<br/>
+<a href="mailto:joshua.plotkin@stonybrook.edu">joshua.plotkin@stonybrook.edu</a>
+</div>
+</footer>
 </body>
 </html>
