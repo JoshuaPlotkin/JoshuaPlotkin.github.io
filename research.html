@@ -1,178 +1,90 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research at the Plotkin Lab: basal ganglia circuits, compulsive behavior, striatal compartments, neuromodulation, and Parkinson's disease.">
   <title>Research | Plotkin Lab</title>
-
   <style>
-    :root {
-      --navy: #142536;
-      --teal: #497e88;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f7f9;
-      color: var(--navy);
-      line-height: 1.6;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1120px;
-      margin: 0 auto;
-    }
-
-    header {
-      background: var(--navy);
-      color: white;
-    }
-
-    .nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 24px;
-      padding: 20px 0;
-    }
-
-    .brand {
-      color: white;
-      font-size: 23px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      text-decoration: none;
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 24px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    main {
-      padding: 75px 0 110px;
-    }
-
-    h1 {
-      font-size: 44px;
-      margin: 0 0 8px;
-    }
-
-    .subtitle {
-      color: #607080;
-      margin: 0 0 42px;
-    }
-
-    .research-section {
-      background: white;
-      border: 1px solid #e0e6ea;
-      border-radius: 10px;
-      padding: 42px;
-      margin-bottom: 28px;
-    }
-
-    .research-number {
-      color: var(--teal);
-      font-size: 13px;
-      font-weight: bold;
-      letter-spacing: 1.5px;
-    }
-
-    .research-section h2 {
-      font-size: 27px;
-      line-height: 1.3;
-      margin: 12px 0 18px;
-    }
-
-    .research-section p {
-      max-width: 780px;
-      color: #526477;
-      margin: 0;
-      font-size: 17px;
-    }
-
-    @media (max-width: 750px) {
-      .nav {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      h1 { font-size: 36px; }
-
-      .research-section {
-        padding: 26px;
-      }
-    }
+    :root { --navy:#142536; --teal:#497e88; --paper:#f5f7f9; --ink:#263b4b; --muted:#526477; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; background:var(--paper); color:var(--ink); line-height:1.7; }
+    .container { width:min(1120px,90%); margin:auto; }
+    header { background:var(--navy); color:white; padding:22px 0; border-bottom:1px solid #34495b; }
+    .nav { display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap; }
+    .brand { color:white; font-size:21px; font-weight:700; letter-spacing:2px; text-decoration:none; }
+    nav { display:flex; flex-wrap:wrap; gap:22px; }
+    nav a { color:white; text-decoration:none; font-size:14px; }
+    nav a:hover, nav a[aria-current="page"] { color:#a9c6d0; }
+    main { padding:76px 0 100px; }
+    h1 { font-size:clamp(36px,4.5vw,50px); line-height:1.2; letter-spacing:-1px; margin:0 0 24px; color:var(--navy); }
+    .overview { max-width:920px; font-size:19px; color:#475e70; margin:0 0 54px; }
+    .research-section { background:white; border:1px solid #e0e6ea; border-radius:10px; padding:42px 46px; margin-bottom:28px; box-shadow:0 3px 14px rgba(20,37,54,.035); }
+    .research-section h2 { color:var(--navy); font-size:clamp(24px,2.7vw,29px); line-height:1.3; margin:0 0 22px; }
+    .research-section p { color:var(--muted); font-size:17px; max-width:920px; margin:0 0 18px; }
+    .research-section p:last-child { margin-bottom:0; }
+    /* To add a lab figure later, place an <img> in a <figure class="research-figure"> inside a section. */
+    .research-figure { margin:24px 0 0; max-width:720px; }
+    .research-figure img { display:block; max-width:100%; height:auto; border-radius:6px; }
+    .research-figure figcaption { font-size:13px; color:#607080; margin-top:8px; }
+    footer { background:var(--navy); color:#d6e0e8; padding:42px 0; font-size:14px; }
+    footer strong { color:white; }
+    footer a { color:#d6e0e8; text-decoration:none; }
+    footer a:hover { color:white; text-decoration:underline; }
+    @media(max-width:650px) { main { padding:54px 0 70px; } .overview { font-size:17px; margin-bottom:36px; } .research-section { padding:27px 25px; } .research-section p { font-size:16px; } nav { gap:14px; } }
   </style>
 </head>
-
 <body>
   <header>
     <div class="container nav">
       <a class="brand" href="index.html">PLOTKIN LAB</a>
       <nav aria-label="Main navigation">
-        <a href="research.html">Research</a>
+        <a href="research.html" aria-current="page">Research</a>
         <a href="people.html">People</a>
-        <a href="index.html#publication">Publications</a>
+        <a href="publications.html">Publications</a>
         <a href="index.html#about">About</a>
       </nav>
     </div>
   </header>
-
   <main>
     <div class="container">
       <h1>Research</h1>
-      <p class="subtitle">
-        Exploring basal ganglia circuits in health and disease
-      </p>
+      <p class="overview">Our laboratory investigates how basal ganglia circuits are functionally organized, how they regulate behavior, and how their dysfunction contributes to neurological and psychiatric disorders. We combine electrophysiology, advanced imaging, circuit manipulation, and behavioral approaches to uncover the neural mechanisms underlying these processes.</p>
 
       <section class="research-section" id="ocd">
         <h2>OCD and Compulsive Behaviors</h2>
-        <p>
-          Investigating how alterations in striatal circuit
-          function and neuromodulation contribute to
-          compulsive behaviors.
-        </p>
+        <p>At any given moment, the brain faces the formidable task of selecting among numerous possible actions. Some actions are beneficial and should be initiated, while others are inappropriate and must be suppressed. The inability to properly regulate this process lies at the heart of many neurological and psychiatric disorders, perhaps most notably obsessive-compulsive disorder (OCD).</p>
+        <p>The striatum plays a central role in this process of “action selection.” Accordingly, dysregulated striatal function has been linked to compulsive behaviors, a defining feature of OCD. Yet precisely how striatal dysfunction gives rise to these behaviors remains poorly understood.</p>
+        <p>Using mouse models of OCD-like behavior, we investigate how striatal dysfunction contributes to compulsive and repetitive behaviors. Our work has identified two potentially targetable circuit abnormalities that are central to this process: pathological cholinergic signaling and abnormal modulation of sensorimotor corticostriatal synapses by limbic inputs.</p>
       </section>
 
       <section class="research-section" id="compartments">
         <h2>Compartmental Function of the Striatum</h2>
-        <p>
-          Understanding how striosome and matrix compartments
-          are differentially engaged and regulated to shape
-          behavior.
-        </p>
+        <p>The striatum is organized into two neurochemically and anatomically distinct compartments known as striosomes and matrix. Although these compartments are intermingled throughout the striatum, they differ in their connectivity, neuromodulatory regulation, and contributions to behavior.</p>
+        <p>Our laboratory investigates how striosome and matrix circuits process information and respond to neuromodulatory signals. We are particularly interested in how dopamine differentially regulates neuronal excitability and synaptic transmission within these compartments, and how their distinct properties contribute to basal ganglia function. Understanding these differences may reveal how compartment-specific circuit dysfunction contributes to neurological and psychiatric disorders.</p>
       </section>
 
       <section class="research-section" id="neuromodulation">
         <h2>Neuromodulation</h2>
-        <p>
-          Studying how neuromodulators regulate striatal
-          circuit function in health and disease.
-        </p>
+        <p>Striatal function is strongly influenced by neuromodulators, including dopamine, acetylcholine, and serotonin, which regulate neuronal excitability, synaptic transmission, and plasticity. Our research examines how these signaling systems interact to shape information processing within the striatum.</p>
+        <p>A particular focus is on striatal cholinergic interneurons, a relatively sparse population of neurons that exerts widespread influence over the striatum. We investigate how these neurons shape striatal circuit function, both through their direct effects on neuronal activity and by coordinating the release of other neuromodulators.</p>
       </section>
 
       <section class="research-section" id="parkinsons">
         <h2>Parkinson's Disease</h2>
-        <p>
-          Examining how dopamine depletion and replacement
-          alter striatal compartmental function and contribute
-          to motor and non-motor symptoms.
-        </p>
+        <p>Parkinson's disease is characterized by the degeneration of dopamine-producing neurons in the substantia nigra and the resulting dysfunction of basal ganglia circuits. Although its motor symptoms are well recognized, Parkinson's disease also produces cognitive and other non-motor impairments that can significantly affect quality of life.</p>
+        <p>Our research examines how dopamine depletion and replacement alter striatal circuit function, with particular emphasis on differences between striosome and matrix compartments. By identifying compartment-specific mechanisms of dysfunction, we aim to better understand how altered striatal activity contributes to the motor and non-motor symptoms of Parkinson's disease.</p>
       </section>
     </div>
   </main>
+  <footer>
+    <div class="container">
+      <strong>Plotkin Lab</strong><br>
+      Stony Brook University<br>
+      Stony Brook, New York<br>
+      <a href="mailto:joshua.plotkin@stonybrook.edu">joshua.plotkin@stonybrook.edu</a>
+    </div>
+  </footer>
 </body>
 </html>
