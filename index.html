@@ -1,31 +1,31 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta name="description" content="Investigating how basal ganglia circuits shape behavior and how their dysfunction contributes to neurological and psychiatric disorders.">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="canonical" href="https://joshuaplotkin.github.io/index.html">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Plotkin Lab">
-<meta property="og:title" content="Plotkin Lab | Stony Brook University">
-<meta property="og:description" content="Investigating how basal ganglia circuits shape behavior and how their dysfunction contributes to neurological and psychiatric disorders.">
-<meta property="og:url" content="https://joshuaplotkin.github.io/index.html">
-<meta property="og:image" content="https://joshuaplotkin.github.io/social-preview.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Plotkin Lab, basal ganglia circuits, function, behavior, and disease">
-<meta name="twitter:site" content="@lab_plotkin">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Plotkin Lab | Stony Brook University">
-<meta name="twitter:description" content="Investigating how basal ganglia circuits shape behavior and how their dysfunction contributes to neurological and psychiatric disorders.">
-<meta name="twitter:image" content="https://joshuaplotkin.github.io/social-preview.png">
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Plotkin Lab | Stony Brook University</title>
-  <style>
+<meta content="Investigating how basal ganglia circuits shape behavior and how their dysfunction contributes to neurological and psychiatric disorders." name="description"/>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://joshuaplotkin.github.io/index.html" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="Plotkin Lab" property="og:site_name"/>
+<meta content="Plotkin Lab | Stony Brook University" property="og:title"/>
+<meta content="Investigating how basal ganglia circuits shape behavior and how their dysfunction contributes to neurological and psychiatric disorders." property="og:description"/>
+<meta content="https://joshuaplotkin.github.io/index.html" property="og:url"/>
+<meta content="https://joshuaplotkin.github.io/social-preview.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="Plotkin Lab, basal ganglia circuits, function, behavior, and disease" property="og:image:alt"/>
+<meta content="@lab_plotkin" name="twitter:site"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Plotkin Lab | Stony Brook University" name="twitter:title"/>
+<meta content="Investigating how basal ganglia circuits shape behavior and how their dysfunction contributes to neurological and psychiatric disorders." name="twitter:description"/>
+<meta content="https://joshuaplotkin.github.io/social-preview.png" name="twitter:image"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Plotkin Lab | Stony Brook University</title>
+<style>
     :root {
       --navy: #142536;
       --white: #ffffff;
@@ -216,117 +216,105 @@
       .card { padding: 25px; }
       nav { gap: 14px; }
     }
-  </style>
+  
+/* Entire research card is a keyboard-accessible link */
+.card {padding:0;transition:box-shadow .2s ease,transform .2s ease,border-color .2s ease;}
+.card-link {display:block;height:100%;padding:28px;color:inherit;text-decoration:none;border-radius:10px;}
+.card-link::after {content:"Read more →";display:block;margin-top:18px;color:#32627d;font-size:14px;font-weight:700;}
+.card:hover,.card:focus-within {border-color:#9ebdc4;box-shadow:0 7px 20px rgba(20,37,54,.10);transform:translateY(-2px);}
+.card-link:focus-visible {outline:3px solid #497e88;outline-offset:3px;}
+@media(prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
+</style>
 </head>
 <body>
-
 <header>
-  <div class="container nav">
-    <a class="brand" href="/">PLOTKIN LAB</a>
-   <nav aria-label="Main navigation">
-  <a href="research.html">Research</a>
-  <a href="people.html">People</a>
-  <a href="publications.html">Publications</a>
-  <a href="#about">About</a>
+<div class="container nav">
+<a class="brand" href="/">PLOTKIN LAB</a>
+<nav aria-label="Main navigation">
+<a href="research.html">Research</a>
+<a href="people.html">People</a>
+<a href="publications.html">Publications</a>
+<a href="#about">About</a>
 </nav>
-  </div>
+</div>
 </header>
-
 <main>
-
 <div class="hero">
-  <div class="container hero-layout">
-    <div>
-      <div class="eyebrow">Stony Brook University Renaissance School of Medicine, Department of Neurobiology &amp; Behavior</div>
-      <h1>Basal ganglia circuits.<span class="hero-headline-secondary">Function. Behavior. Disease.</span></h1>
-      <p>
+<div class="container hero-layout">
+<div>
+<div class="eyebrow">Stony Brook University Renaissance School of Medicine, Department of Neurobiology &amp; Behavior</div>
+<h1>Basal ganglia circuits.<span class="hero-headline-secondary">Function. Behavior. Disease.</span></h1>
+<p>
         Investigating how basal ganglia circuits shape
         behavior and how their dysfunction contributes
         to neurological and psychiatric disorders.
       </p>
-      <a class="button" href="research.html">
-        Explore Our Research
-      </a>
-    </div>
-    <img
-      class="hero-image"
-      src="plotkin-neuron.webp"
-      alt="Red fluorescent striatal projection neuron"
-    >
-  </div>
 </div>
-
-
-  <section class="light" id="research">
-    <div class="container">
-      <h2>Research Focus</h2>
-      <div class="grid">
-
-        <article class="card">
-          <h3>OCD and Compulsive Behaviors</h3>
-          <p>
+<img alt="Red fluorescent striatal projection neuron" class="hero-image" src="plotkin-neuron.webp"/>
+</div>
+</div>
+<section class="light" id="research">
+<div class="container">
+<h2>Research Focus</h2>
+<div class="grid">
+<article class="card"><a class="card-link" href="research.html#ocd">
+<h3>OCD and Compulsive Behaviors</h3>
+<p>
             Investigating how alterations in striatal
             circuit function and neuromodulation
             contribute to compulsive behaviors.
           </p>
-        </article>
-
-        <article class="card">
-          <h3>Compartmental Function of the Striatum</h3>
-          <p>
+</a></article>
+<article class="card"><a class="card-link" href="research.html#compartments">
+<h3>Compartmental Function of the Striatum</h3>
+<p>
             Understanding how striosome and matrix
             compartments are differentially engaged
             and regulated to shape behavior.
           </p>
-        </article>
-
-        <article class="card">
-          <h3>Neuromodulation</h3>
-          <p>
+</a></article>
+<article class="card"><a class="card-link" href="research.html#neuromodulation">
+<h3>Neuromodulation</h3>
+<p>
             Studying how neuromodulators regulate
             striatal circuit function in health
             and disease.
           </p>
-        </article>
-
-        <article class="card">
-          <h3>Parkinson's Disease</h3>
-          <p>
+</a></article>
+<article class="card"><a class="card-link" href="research.html#parkinsons">
+<h3>Parkinson's Disease</h3>
+<p>
             Examining how dopamine depletion and
             replacement alter striatal compartmental
             function and contribute to motor and
             non-motor symptoms.
           </p>
-        </article>
-
-      </div>
-      <a class="section-link" href="research.html">Learn more about our research &rarr;</a>
-    </div>
-  </section>
-
-  <section class="white" id="publication">
-    <div class="container">
-     <h2>Featured Publication</h2>
-      <div class="feature">
-        <h3>
+</a></article>
+</div>
+<a class="section-link" href="research.html">Learn more about our research →</a>
+</div>
+</section>
+<section class="white" id="publication">
+<div class="container">
+<h2>Featured Publication</h2>
+<div class="feature">
+<h3>
           A basolateral amygdala to dorsolateral
           striatum projection modulates
           stimulus-evoked motor behavior
         </h3>
-        <p>Hobel ZB, Brechbill TR, Cruz AM, Yang LT, Jimenez K, Wu B, Liu Q, Kirsch SB, Fernandes NJ, Bock R, Alvarez VA, Blackwell KT, Plotkin JL.<span style="display:block; margin-top:6px;"><em>Neuron</em> · 2026</span></p>
-        <a href="https://doi.org/10.1016/j.neuron.2026.08.025"
-           target="_blank" rel="noopener noreferrer">
-          Read the publication &rarr;
+<p>Hobel ZB, Brechbill TR, Cruz AM, Yang LT, Jimenez K, Wu B, Liu Q, Kirsch SB, Fernandes NJ, Bock R, Alvarez VA, Blackwell KT, Plotkin JL.<span style="display:block; margin-top:6px;"><em>Neuron</em> · 2026</span></p>
+<a href="https://doi.org/10.1016/j.neuron.2026.08.025" rel="noopener noreferrer" target="_blank">
+          Read the publication →
         </a>
-        <div><a class="section-link" href="publications.html">View all publications &rarr;</a></div>
-      </div>
-    </div>
-  </section>
-
+<div><a class="section-link" href="publications.html">View all publications →</a></div>
+</div>
+</div>
+</section>
 <section class="light" id="about">
-  <div class="container">
-    <h2>About the Lab</h2>
-    <p class="intro">
+<div class="container">
+<h2>About the Lab</h2>
+<p class="intro">
       The Plotkin Lab investigates how distinct cell types, neural pathways,
       and neuromodulators interact within basal ganglia circuits. By combining
       electrophysiology, two-photon calcium imaging, and behavioral approaches,
@@ -334,11 +322,9 @@
       behavior, and how these mechanisms change in neurological and psychiatric
       disorders.
     </p>
-  </div>
+</div>
 </section>
 </main>
-
-<footer><div class="container"><strong>Plotkin Lab</strong><br>Stony Brook University<br>Renaissance School of Medicine<br>Stony Brook, New York<br><a href="mailto:joshua.plotkin@stonybrook.edu">joshua.plotkin@stonybrook.edu</a><br><a href="https://x.com/lab_plotkin" target="_blank" rel="noopener noreferrer">X: @lab_plotkin</a></div></footer>
-
+<footer><div class="container"><strong>Plotkin Lab</strong><br/>Stony Brook University<br/>Renaissance School of Medicine<br/>Stony Brook, New York<br/><a href="mailto:joshua.plotkin@stonybrook.edu">joshua.plotkin@stonybrook.edu</a><br/><a href="https://x.com/lab_plotkin" rel="noopener noreferrer" target="_blank">X: @lab_plotkin</a></div></footer>
 </body>
 </html>
